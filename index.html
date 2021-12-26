@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur Card</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" id="toggle" onclick="menu-expand()">
+        <i class="fal fa-plus" id="plus"></i>
+    </div>
+    <!-- <div class="demo">
+    </div> -->
+    <div class="menu" id="menu">
+        <a href="#">
+            <i class="fab fa-apple"></i>
+        </a>
+        <a href="#">
+            <i class="fas fa-address-card"></i>
+        </a>
+        <a href="#">
+            <i class="fas fa-bell"></i>
+        </a>
+        <a href="#">
+            <i class="fas fa-music"></i>
+        </a>
+        <a href="#">
+            <i class="fas fa-play-circle"></i>
+        </a>
+        <a href="#">
+            <i class="fas fa-broadcast-tower"></i>
+        </a>
+    </div>
+
+    <script>
+        var i = 0;
+        function expand(){
+            if(i == 0){
+                document.getElementById("menu").style.transform = "scale(4)";
+                document.getElementById("plus").style.justifyContent = "center";
+                document.getElementById("plus").style.margin = "12px 0px 0px 0px";
+                document.getElementById("plus").style.transform = "rotate(133deg)";
+                i = 1;
+            }
+            else{
+                document.getElementById("menu").style.transform = "scale(0)";
+                document.getElementById("plus").style.justifyContent = "center";
+                document.getElementById("plus").style.margin = "12px 0 0px 0px";
+                document.getElementById("plus").style.transform = "rotate(0deg)";
+                i = 0;
+            }
+        }
+    </script>
+</body>
+</html>

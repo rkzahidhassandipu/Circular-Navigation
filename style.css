@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+.toggle{
+    background: #fff;
+    width: 5.2em;
+    height: 5.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.toggle i{
+    font-size: 4em;
+    color: #000;
+    display: flex;
+    margin: 12px 0 0px 16px; 
+    transition: 0.3s;
+}
+.toggle:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.menu{
+    background: #000;
+    height: 5.2em;
+    width: 5.2em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -2;
+    transition: 0.7s;
+    box-shadow: -2px -2px 5px rgb(255 231 231 / 36%),
+    3px 3px 5px rgb(126 122 122 / 51%)
+}
+.menu a{
+    display: flex;
+    position: absolute;
+    font-size: 0.8em;
+    color: #222;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.menu a i{
+    font-size: 10px;
+    color: #fff;
+}
+.menu a:nth-child(1){
+    top: 3px;
+    left: 37px;
+
+}
+.menu a:nth-child(2){
+    top: 25px;
+    left: 64px;
+}
+.menu a:nth-child(3){
+    top: 51px;
+    left: 65px;
+}
+.menu a:nth-child(4){
+    top: 68px;
+    left: 37px;
+}
+.menu a:nth-child(5){
+    top: 51px;
+    left: 10px;
+}
+.menu a:nth-child(6){
+    top: 25px;
+    left: 5px;
+}
